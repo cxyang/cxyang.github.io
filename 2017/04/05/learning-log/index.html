@@ -87,34 +87,28 @@
 
 
 
-<meta name="description" content="###dijango
-####虚拟环境
-
+<meta name="description" content="dijango虚拟环境
 切换到项目目录,创见名为ll_env的虚拟环境learning__log$ python -m venv ll_env
 安装virtualenv，创建一个虚拟环境：learning__log$ virtualenv ll_env
 激活虚拟环境： learning__log$ source ll_env/bin/activate
-停止虚拟环境： deativ">
+停止虚拟环境： deativate   若关闭">
 <meta property="og:type" content="article">
 <meta property="og:title" content="learning_log">
 <meta property="og:url" content="http://yoursite.com/2017/04/05/learning-log/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="###dijango
-####虚拟环境
-
+<meta property="og:description" content="dijango虚拟环境
 切换到项目目录,创见名为ll_env的虚拟环境learning__log$ python -m venv ll_env
 安装virtualenv，创建一个虚拟环境：learning__log$ virtualenv ll_env
 激活虚拟环境： learning__log$ source ll_env/bin/activate
-停止虚拟环境： deativ">
-<meta property="og:updated_time" content="2017-04-05T13:04:27.000Z">
+停止虚拟环境： deativate   若关闭">
+<meta property="og:updated_time" content="2017-04-05T13:44:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="learning_log">
-<meta name="twitter:description" content="###dijango
-####虚拟环境
-
+<meta name="twitter:description" content="dijango虚拟环境
 切换到项目目录,创见名为ll_env的虚拟环境learning__log$ python -m venv ll_env
 安装virtualenv，创建一个虚拟环境：learning__log$ virtualenv ll_env
 激活虚拟环境： learning__log$ source ll_env/bin/activate
-停止虚拟环境： deativ">
+停止虚拟环境： deativate   若关闭">
 
 
 
@@ -349,28 +343,27 @@
       
 
       
-        <p>###dijango</p>
-<p>####虚拟环境</p>
-<ul>
+        <h3 id="dijango"><a href="#dijango" class="headerlink" title="dijango"></a>dijango</h3><h4 id="虚拟环境"><a href="#虚拟环境" class="headerlink" title="虚拟环境"></a>虚拟环境</h4><ul>
 <li>切换到项目目录,创见名为ll_env的虚拟环境<br>learning__log$ python -m venv ll_env</li>
 <li>安装virtualenv，创建一个虚拟环境：learning__log$ virtualenv ll_env</li>
 <li>激活虚拟环境： learning__log$ source ll_env/bin/activate</li>
 <li>停止虚拟环境： deativate   若关闭运行虚拟环境的终端，虚拟环境也将不再处于活动状态</li>
 </ul>
 <a id="more"></a>
-<p>####Django中创建项目<br>    虚拟环境中，django-admin.py startproject learning_log .<br>    (千万别忘了句点，否则部署时将遇到一些配置问题)。</p>
-<pre><code>创建数据库：虚拟环境中，python manage.py migrate
-</code></pre><p>####开服务<br>虚拟环境中，<br>    <code>\</code>python manage.py runsever``</p>
-<p>####创建应用程序<br>讲使用models.py 来定义我们要在应用程序中管理的数据。</p>
-<p>####定义模型<br>topic是一个ForeignKey实例。(外键)<br>TextField实例，属性date_added能够按创建顺序呈现条目，并在每个条目旁边放置时间戳。 date_added=models.DateTimeField(auto_now_add=true)</p>
-<p>####迁移数据库<strong>**</strong>(每次修改都需要)</p>
-<ul>
+<h4 id="Django中创建项目"><a href="#Django中创建项目" class="headerlink" title="Django中创建项目"></a>Django中创建项目</h4><pre><code>虚拟环境中，django-admin.py startproject learning_log .
+(千万别忘了句点，否则部署时将遇到一些配置问题)。
+
+ 创建数据库：虚拟环境中，python manage.py migrate
+</code></pre><h4 id="开服务"><a href="#开服务" class="headerlink" title="开服务"></a>开服务</h4><p>虚拟环境中，<br>    <code>\</code>python manage.py runsever``</p>
+<h4 id="创建应用程序"><a href="#创建应用程序" class="headerlink" title="创建应用程序"></a>创建应用程序</h4><p>讲使用models.py 来定义我们要在应用程序中管理的数据。</p>
+<h4 id="定义模型"><a href="#定义模型" class="headerlink" title="定义模型"></a>定义模型</h4><p>topic是一个ForeignKey实例。(外键)<br>TextField实例，属性date_added能够按创建顺序呈现条目，并在每个条目旁边放置时间戳。 date_added=models.DateTimeField(auto_now_add=true)</p>
+<h4 id="迁移数据库-每次修改都需要"><a href="#迁移数据库-每次修改都需要" class="headerlink" title="迁移数据库**(每次修改都需要)"></a>迁移数据库<strong>**</strong>(每次修改都需要)</h4><ul>
 <li>修改models.py</li>
 <li>执行命令python manange.py makemigrations app_name</li>
 <li>再执行命令 python manange.py migrate</li>
 </ul>
-<p>####注册模型Entry<br>    admin.py 中</p>
-
+<h4 id="注册模型Entry"><a href="#注册模型Entry" class="headerlink" title="注册模型Entry"></a>注册模型Entry</h4><pre><code>admin.py 中
+</code></pre>
       
     </div>
 
@@ -465,8 +458,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://pic3.nipic.com/20090526/800567_215811084_2.jpg"
@@ -510,6 +512,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#dijango"><span class="nav-number">1.</span> <span class="nav-text">dijango</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#虚拟环境"><span class="nav-number">1.1.</span> <span class="nav-text">虚拟环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Django中创建项目"><span class="nav-number">1.2.</span> <span class="nav-text">Django中创建项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开服务"><span class="nav-number">1.3.</span> <span class="nav-text">开服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建应用程序"><span class="nav-number">1.4.</span> <span class="nav-text">创建应用程序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定义模型"><span class="nav-number">1.5.</span> <span class="nav-text">定义模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#迁移数据库-每次修改都需要"><span class="nav-number">1.6.</span> <span class="nav-text">迁移数据库**(每次修改都需要)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注册模型Entry"><span class="nav-number">1.7.</span> <span class="nav-text">注册模型Entry</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
